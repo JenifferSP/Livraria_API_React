@@ -1,0 +1,78 @@
+.mainMyShelf{
+    background-color: rgba(247, 228, 193, 0.726);
+}
+
+.MyShelf-main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+}
+.title-MyShelf{
+   float: left;
+   padding: 20px;
+   position: absolute;
+}
+.content-MyShelf{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100vh;
+    margin-top: 10%;
+}
+
+.imgMyShelf{
+    margin: 10px 29px; 
+}
+.stars{
+    cursor: pointer;
+}
+.imgMyShelf:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.imgMyShelf  img{
+    height: 17vh;
+    width: 6vw;
+    border-radius: 10px;
+}
+
+
+
+
+.rating-book{
+ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20rem;
+}
+.rating-book-container img{
+
+    height: 17vh;
+    width: 6vw;
+    display: flex;
+    justify-content: center;
+}
+
+.text-rating{
+    width: 28rem;
+    
+}
+
+.rating-book-container{
+  
+    height: 19rem;
+    width: 60rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(228, 162, 118, 0.616);
+    border-radius: 15px;
+}
+.content-box-rating{
+
+    display: inline-block;
+    margin: 10px 29px; 
+}

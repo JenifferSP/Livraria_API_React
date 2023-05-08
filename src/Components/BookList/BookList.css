@@ -1,0 +1,122 @@
+.booklist, .book-details{
+    padding: 3rem 0;
+    background-color: rgba(247, 228, 193, 0.726);
+}
+.result{
+    position: fixed;
+    top: 0;
+    
+    
+}
+
+.main{
+    padding: 3rem 2rem;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.616);
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 5px 15px 0px;
+    transition: var(--transition);
+    border-radius: 19px;
+}
+
+.numberRead{
+    z-index: 1000;
+    position: absolute;
+    top: 0;
+}
+.booklist-content{
+    gap: 3rem;
+}
+
+.stars{
+   display: flex;
+   justify-content: center;
+   padding-top: 10px;
+}
+.main:hover{
+    transform: scale(1.1);
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+
+.btn-BookRead, .btn-favoriteBook{
+    width:58px;
+    height: 20px;
+    border-radius: 10px;
+    display: inline;
+    margin: 0 9px; 
+    color: white;
+    font-weight: 600;
+}
+.btn-BookRead{
+    background: rgba(58, 160, 11, 0.836);
+}.btn-BookRead:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+    border: 1px solid rgba(58, 160, 11, 0.836);
+    background: white;
+    color: rgba(58, 160, 11, 0.836);
+}
+.btn-favoriteBook{
+    background: rgba(204, 152, 8, 0.993);
+    font-size: 11px;
+}.btn-favoriteBook:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+    border: 1px solid rgba(204, 152, 8, 0.993);
+    background: white;
+    color: rgba(204, 152, 8, 0.993);
+}
+.book-item-img img{
+    max-width: 180px;
+    height: 190px;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 19px;
+}
+.book-item-info{
+    margin-top: 2rem;
+}
+.book-item-info-item.title{
+    line-height: 1.4;
+    margin-bottom: 0.8rem;
+    color:var(--orange-color);
+}.book-item-info-item.title:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+    color: var(--purple-color);
+}
+.book-item-info-item.author{
+    line-height: 1.4;
+    margin-bottom: 4px;
+}
+.book-item-info-item:not(.book-item-info-item.title) span:last-child{
+    opacity: 0.8;
+}
+.book-item-info-item.publish-year{
+    opacity: 0.6;
+    font-style: italic;
+    font-size: 14px;
+}
+
+@media screen and (min-width: 600px){
+    .booklist-content{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 992px){
+    .booklist-content{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .book-item-img img{
+        max-width: 150px;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .booklist-content{
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .book-item-img img{
+        max-width: 120px;
+    }
+}
